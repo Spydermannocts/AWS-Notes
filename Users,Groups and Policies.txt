@@ -3,3 +3,16 @@ You can select different regions and based on the regions you can select the cor
 You can create users and you can group users into different groups and they have some policies regarding them and they mean that every user has a particular access and they cant access everything
 
 It is in json format.
+
+
+1. Centralized Control of Your AWS Account
+
+2.Shared Access to Your AWS Account
+
+3.Granular Permissions
+
+4.Multi-Factor Authentication (MFA)
+
+5.Identity Federation
+
+6.Temporary Credentials for Applications
