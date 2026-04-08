@@ -1,0 +1,5 @@
+You can select different regions and based on the regions you can select the corresponding services available in those services.
+
+You can create users and you can group users into different groups and they have some policies regarding them and they mean that every user has a particular access and they cant access everything
+
+It is in json format.
