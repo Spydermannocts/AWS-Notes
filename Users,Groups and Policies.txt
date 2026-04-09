@@ -4,7 +4,6 @@ You can create users and you can group users into different groups and they have
 
 It is in json format.
 
-
 1. Centralized Control of Your AWS Account
 
 2.Shared Access to Your AWS Account
@@ -16,3 +15,69 @@ It is in json format.
 5.Identity Federation
 
 6.Temporary Credentials for Applications
+
+You can create different sessions for different users and perform different functions.
+
+Policies:
+
+Policies are the rules that define what are to be done and what not.
+
+Sid:An identifier for the statement.
+
+Effect:Whether the statement allows or denies access.
+
+Principal:Account/User/Role to which the policy applied to.
+
+Action:List of actions this policy allows or denies.
+
+Resource:List of resources to which actions applied to 
+
+Condition:Condition for when this policy is in effect.
+
+i AM READ ONLY ACCESS ALLOWS STEPHANE TO READ ANYTHING ON IAM.
+
+Policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "iam:GetUser",
+            "Resource": "*"
+        }
+    ]
+}
+
+
+1. "Version": "2012-10-17"
+
+This is the policy language version
+2012-10-17 is the latest and standard version
+It does not mean the policy was created in 2012
+
+2. "Effect": "Allow"
+
+This explicitly allows an action
+(Other possible value is Deny)
+
+3. "Action": "iam:GetUser"
+
+Allows the GetUser API
+This action lets the caller:
+
+Retrieve information about an IAM user
+Such as:
+
+User name
+User ARN
+User ID
+Creation date
+
+4. "Resource": "*"
+
+The action can be performed on any IAM user
+However, GetUser has limited scope, so * is common here
+
+MFA: Used to give multiple layers of authentication to your device.
